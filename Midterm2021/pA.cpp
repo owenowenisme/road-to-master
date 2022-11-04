@@ -24,7 +24,7 @@ int main(){
         if(tmp<minmin&&now<=(h*60+m)){
             minmin=tmp;
             ans=train;
-            printf("%d %d\n",ans,tmp);
+            //printf("%d %d\n",ans,tmp);
         }
         
     }

@@ -8,19 +8,10 @@
 #define maxn 1e8
 const double EPS = 1e-7;
 using namespace std;
-void debug_out() { cerr << "]\n"
-                        << flush; }
+void debug_out() { cerr << "]\n"<< flush; }
 template <typename Head, typename... Tail>
-void debug_out(Head H, Tail... T)
-{
-    cerr << H;
-    if (sizeof...(T))
-        cerr << ", ";
-    debug_out(T...);
-}
-#define debug(...)                                                     \
-    cerr << "LINE(" << __LINE__ << ") : [" << #__VA_ARGS__ << "] = ["; \
-    debug_out(__VA_ARGS__)
+void debug_out(Head H, Tail... T){cerr << H;if (sizeof...(T))cerr << ", ";debug_out(T...);}
+#define debug(...) cerr << "LINE(" << __LINE__ << ") : [" << #__VA_ARGS__ << "] = ["; \debug_out(__VA_ARGS__)
 
 signed main(void)
 {

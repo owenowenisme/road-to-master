@@ -108,7 +108,7 @@ void print_K(unsigned int mask[][MAX_SIZE])
     {
         for (int j = 0; j < W; ++j)
         {  
-            for(int)
+            //for(int)
            tmp=image[i][j];
            lround((tmp%256)*(100-mask[i][j])*0.01*2.55);
            

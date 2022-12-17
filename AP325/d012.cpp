@@ -16,7 +16,7 @@ void debug_out(Head H, Tail... T){cerr << H;if (sizeof...(T))cerr << ", ";debug_
 int fastpow(int x, int y, int a) {
     int ans = 1;
     if (y >= 1) {
-        int tmp = fastpow(x, y / 2, a) % a;
+        int tmp = fastpow(x, y>>1, a) % a;
         if (y % 2)
             ans = (((tmp * tmp) % a) * x) % a;
         else

@@ -1,0 +1,1 @@
+{"name":"Local: pA","url":"/Users/owenowenisme/Desktop/road-to-master/PD1/PD1:ch11-2/pA.c","tests":[{"id":1670654281391,"input":"e6 57 37 5d 59 2b b6 5c 3a b3 12 19 dc 3f 7c 6c \n","output":"3515645021722633436\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/owenowenisme/Desktop/road-to-master/PD1/PD1:ch11-2/pA.c","group":"local","local":true}

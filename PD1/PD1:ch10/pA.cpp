@@ -8,9 +8,7 @@ int main() {
     scanf("%d %d", &dis, &hp);
     getchar();
     fgets(str, 50000, stdin);
-    //printf("%s",str);
-    char d[] = "\,\.";
-    //str[strlen(str)]='\0';
+    char d[] = ",.";
     str[strlen(str)-1]='\0';
     char *c = strtok(str, d);
     int checker=0;

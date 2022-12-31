@@ -15,7 +15,7 @@ void debug_out(Head H, Tail... T){cerr << H;if (sizeof...(T))cerr << ", ";debug_
 int fastpow(int x, int y, int p) {
     if (y < 1) return 1;
     if (y & 1) {
-        int tmp = fastpow(x, y >> 1, p) % p;
+        int tmp = fastpow(x, y >> 1, p)% p;
         return ((tmp * tmp % p) * x) % p;
     } else {
         int tmp = fastpow(x, y >> 1, p) % p;

@@ -1,59 +1,36 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <ctype.h>
-typedef struct
-{
-    const char* protocol = 0;
-    const char* site = 0;
-    const char* port = 0;
-    const char* path = 0;
-} URL_INFO;
-URL_INFO* split_url(URL_INFO* info, const char* url)
-{
-    if (!info || !url)
-        return NULL;
-    info->protocol = strtok(strcpy((char*)malloc(strlen(url)+1), url), "://");
-    info->site = strstr(url, "://");
-    if (info->site)
-    {
-        info->site += 3;
-        char* site_port_path = strcpy((char*)calloc(1, strlen(info->site) + 1), info->site);
-        info->site = strtok(site_port_path, ":");
-        info->site = strtok(site_port_path, "/");
-    }
-    else
-    {
-        char* site_port_path = strcpy((char*)calloc(1, strlen(url) + 1), url);
-        info->site = strtok(site_port_path, ":");
-        info->site = strtok(site_port_path, "/");
-    }
-    char* URL = strcpy((char*)malloc(strlen(url) + 1), url);
-    info->port = strstr(URL + 6, ":");
-    char* port_path = 0;
-    char* port_path_copy = 0;
-    if (info->port && isdigit(*(port_path = (char*)info->port + 1)))
-    {
-        port_path_copy = strcpy((char*)malloc(strlen(port_path) + 1), port_path);
-        char * r = strtok(port_path, "/");
-        if (r)
-            info->port = r;
-        else
-            info->port = port_path;
-    }
-    else
-        info->port = "80";
-    if (port_path_copy)
-        info->path = port_path_copy + strlen(info->port ? info->port : "");
-    else 
-    {
-        char* path = strstr(URL + 8, "/");
-        info->path = path ? path : "/";
-    }
-    int r = strcmp(info->protocol, info->site) == 0;
-    if (r && info->port == "80")
-        info->protocol = "http";
-    else if (r)
-        info->protocol = "tcp";
-    return info;
+#include <bits/stdc++.h>
+#define ac ios_base::sync_with_stdio(false),cin.tie(0)
+#define mem(a, val) memset(a, val, sizeof(a))
+#define pb push_back
+#define int long long
+#define F first
+#define S second
+const int maxn=1e8;
+const double EPS = 1e-7;
+using namespace std;
+void debug_out() { cerr << "]\n"<< flush; }
+template <typename Head, typename... Tail>
+void debug_out(Head H, Tail... T){cerr << H;if (sizeof...(T))cerr << ", ";debug_out(T...);}
+#define debug(...) cerr << "LINE(" << __LINE__ << ") : [" << #__VA_ARGS__ << "] = ["; debug_out(__VA_ARGS__)
+typedef pair<int,int>pii;
+void solve(){
+	int n;
+	cin>>n;
+	stack<pii>st;
+	int arr[200005]={0};
+	for(int i=1;i<=n;i++){
+		cin>>arr[i];
+	}
+	st.push({-1e10,0});
+	for(int i=1;i<=n;i++){
+		while(st.top().first>=arr[i])
+			st.pop();
+		cout<<st.top().second<<" ";
+		st.push({arr[i],i});
+	}
+}
+signed main(void)
+{ac;
+  solve();
+  return 0;
 }

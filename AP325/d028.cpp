@@ -22,7 +22,7 @@ void solve(){
             st.pop();
         }
         ans+=(i-st.top().second);
-        st.push(make_pair(tmp,i));
+        st.push({tmp,i});
     }
     cout<<ans;
 }

@@ -44,6 +44,9 @@
         "variant": "cpp",
         "cmath": "cpp",
         "complex": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "functional": "cpp",
+        "sstream": "c",
+        "stdio.h": "c"
     }
 }

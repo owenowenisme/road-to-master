@@ -13,31 +13,30 @@ void debug_out() { cerr << "]\n"<< flush; }
 template <typename Head, typename... Tail>
 void debug_out(Head H, Tail... T){cerr << H;if (sizeof...(T))cerr << ", ";debug_out(T...);}
 #define debug(...) cerr << "LINE(" << __LINE__ << ") : [" << #__VA_ARGS__ << "] = ["; debug_out(__VA_ARGS__)
-int n,arr[100005];
-int sub(int l,int r){
-    if(l>=r)return 0;
-    if(r-l==1)return arr[l];
-    int m=(l+r)/2;
-    int ans=max(sub(l,m),sub(m+1,r));
-    int tmp=0,h=arr[m],i=m,j=m;
-    while(i>=l||j<r){
-        if (i < l)
-            h = arr[j];
-        else if (j >= r)
-            h = arr[i];
-        else
-            h = max(arr[i], arr[j]);
-        while (i >= l && h <= arr[i]) i--;
-        while (j < r && h <= arr[j]) j++;
-        tmp = max(tmp, (j - i - 1) * h);
+int arr[100005]={0};
+int sub(int l, int r) {
+    if (l >= r) {
+        return max((int)0, arr[l]);
     }
-    return max(ans,tmp);
+    int m = (l + r) / 2;
+    int a = max(sub(l, m), sub(m + 1, r));
+    int tmp = 0, lcross = 0, rcross = 0;
+    for (int i = m; i >= l; i--) {
+        tmp += arr[i];
+        lcross = max(tmp, lcross);
+    }
+    int tmpp = 0;
+    for (int i = m + 1; i <= r; ++i) {
+        tmpp += arr[i];
+        rcross = max(tmpp, rcross);
+    }
+    return max(a, lcross + rcross);
 }
 void solve(){
-    cin>>n;
+    int n,tmp,ans=0;cin>>n;
     rep(i,0,n)
         cin>>arr[i];
-    cout<<sub(0,n);
+    cout<<sub(0,n-1);
 }
 signed main(void){
     ac;

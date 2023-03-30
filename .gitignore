@@ -6,3 +6,6 @@
 *.out
 *.exe
 *.in
+test.cpp
+test.c
+.vscode

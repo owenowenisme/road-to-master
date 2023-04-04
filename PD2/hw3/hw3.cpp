@@ -40,7 +40,7 @@ void solve(char* filename){
                 else 
                     arr[1]=1;
             }else{
-                arr[id]=stoll(s);
+                arr[id]=stol(s);
             }
             id++;
         }
@@ -55,6 +55,10 @@ void solve(char* filename){
     
     sort(data,data+idx,cmp);
     int current_id=data[0].id,current_overload=0,current_forget=0;
+    if(idx==1){
+    	cout<<current_id<<','<<current_overload<<','<<1;
+	    return;
+    }
     for(int i=1;i<idx;i++){
         if((data[i].date!=data[i-1].date)){
             if(data[i].sign!=-1)
@@ -70,7 +74,6 @@ void solve(char* filename){
             current_forget=0;
             current_id=data[i].id;
         }
-        
     }
     cout<<current_id<<','<<current_overload<<','<<current_forget;
 }

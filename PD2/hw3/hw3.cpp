@@ -53,31 +53,36 @@ void solve(char* filename){
         ss.clear();
     }
     
+
     sort(data,data+idx,cmp);
     int current_id=data[0].id,current_overload=0,current_forget=0;
-    if(idx==1){
-    	cout<<current_id<<','<<current_overload<<','<<1;
-	    return;
+    stack<info>st;
+    st.push(data[0]);
+    for(int i=0;i<idx;i++){
+            if(current_id!=data[i].id){
+                cout<<current_id<<','<<current_overload<<','<<st.size()<<'\n';
+                while(!st.empty())st.pop();
+                st.push(data[i]);
+                current_id=data[i].id,current_overload=0,current_forget=0;
+            }else{
+                if(st.empty()){st.push(data[i]);continue;}
+                if(st.top().date==data[i].date){
+                    if(st.top().sign==0&&data[i].sign==1){
+                        if(data[i].time-st.top().time>800){
+                        current_overload++;
+                        }
+                        st.pop();
+                    }
+                }
+                else{
+                        st.push(data[i]);
+                }
+            }
+        
     }
-    for(int i=1;i<idx;i++){
-        if((data[i].date!=data[i-1].date)){
-            if(data[i].sign!=-1)
-                current_forget++;
-        }else{
-            data[i].sign=-1;data[i-1].sign=-1;
-            if(data[i].time-data[i-1].time>800)
-                current_overload++;
-        }
-        if(current_id!=data[i].id){
-            cout<<current_id<<','<<current_overload<<','<<current_forget<<'\n';
-            current_overload=0;
-            current_forget=0;
-            current_id=data[i].id;
-        }
-    }
-    cout<<current_id<<','<<current_overload<<','<<current_forget;
+    cout<<current_id<<','<<current_overload<<','<<st.size()<<'\n';
 }
-signed main(int argc,char *argv[]){//ac;
+signed main(int argc,char *argv[]){ac;
     solve(argv[1]);
     return 0;
 }

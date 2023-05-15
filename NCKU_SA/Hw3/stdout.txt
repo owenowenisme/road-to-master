@@ -1,0 +1,308 @@
+# BEGIN General/0
+Mediasize: 1073741824 (1.0G)
+Mediasize: 1073741824 (1.0G)
+Mediasize: 1073741824 (1.0G)
+# END General/0
+# BEGIN General/1
+enabled = True
+# END General/1
+# BEGIN General/2
+Installed = True
+# END General/2
+# BEGIN ZFSConfiguration/0
+[{'size': '2.75G', 'capacity': '0%', 'altroot': '-', 'health': 'ONLINE', 'guid': '7705863800598788726', 'version': '-', 'bootfs': '-', 'delegation': 'on', 'autoreplace': 'off', 'cachefile': '-', 'failmode': 'wait', 'listsnapshots': 'off', 'autoexpand': 'off', 'dedupratio': '1.00x', 'free': '2.75G', 'allocated': '1.58M', 'readonly': 'off', 'ashift': '0', 'comment': '-', 'expandsize': '-', 'freeing': '0', 'fragmentation': '0%', 'leaked': '0', 'multihost': 'off', 'checkpoint': '-', 'load_guid': '5152526058023414858', 'autotrim': 'off', 'compatibility': 'off', 'feature@async_destroy': 'enabled', 'feature@empty_bpobj': 'active', 'feature@lz4_compress': 'active', 'feature@multi_vdev_crash_dump': 'enabled', 'feature@spacemap_histogram': 'active', 'feature@enabled_txg': 'active', 'feature@hole_birth': 'active', 'feature@extensible_dataset': 'active', 'feature@embedded_data': 'active', 'feature@bookmarks': 'enabled', 'feature@filesystem_limits': 'enabled', 'feature@large_blocks': 'enabled', 'feature@large_dnode': 'enabled', 'feature@sha512': 'enabled', 'feature@skein': 'enabled', 'feature@userobj_accounting': 'active', 'feature@encryption': 'enabled', 'feature@project_quota': 'active', 'feature@device_removal': 'enabled', 'feature@obsolete_counts': 'enabled', 'feature@zpool_checkpoint': 'enabled', 'feature@spacemap_v2': 'active', 'feature@allocation_classes': 'enabled', 'feature@resilver_defer': 'enabled', 'feature@bookmark_v2': 'enabled', 'feature@redaction_bookmarks': 'enabled', 'feature@redacted_datasets': 'enabled', 'feature@bookmark_written': 'enabled', 'feature@log_spacemap': 'active', 'feature@livelist': 'enabled', 'feature@device_rebuild': 'enabled', 'feature@zstd_compress': 'enabled', 'feature@draid': 'enabled', 'name': 'sa_pool'}]
+# END ZFSConfiguration/0
+# BEGIN ZFSConfiguration/1
+{'type': 'filesystem', 'creation': 'Sun May 14 19:10 2023', 'used': '213K', 'available': '1.71G', 'referenced': '213K', 'compressratio': '1.24x', 'mounted': 'yes', 'quota': 'none', 'reservation': 'none', 'recordsize': '128K', 'mountpoint': '/sa_data', 'sharenfs': 'off', 'checksum': 'on', 'compression': 'lz4', 'atime': 'off', 'devices': 'on', 'exec': 'on', 'setuid': 'on', 'readonly': 'off', 'jailed': 'off', 'snapdir': 'hidden', 'aclmode': 'discard', 'aclinherit': 'restricted', 'createtxg': '486', 'canmount': 'on', 'xattr': 'on', 'copies': '2', 'version': '5', 'utf8only': 'off', 'normalization': 'none', 'casesensitivity': 'sensitive', 'vscan': 'off', 'nbmand': 'off', 'sharesmb': 'off', 'refquota': 'none', 'refreservation': 'none', 'guid': '15156447590168089738', 'primarycache': 'all', 'secondarycache': 'all', 'usedbysnapshots': '0B', 'usedbydataset': '213K', 'usedbychildren': '0B', 'usedbyrefreservation': '0B', 'logbias': 'latency', 'objsetid': '72', 'dedup': 'off', 'mlslabel': 'none', 'sync': 'standard', 'dnodesize': 'legacy', 'refcompressratio': '1.24x', 'written': '213K', 'logicalused': '64K', 'logicalreferenced': '64K', 'volmode': 'default', 'filesystem_limit': 'none', 'snapshot_limit': 'none', 'filesystem_count': 'none', 'snapshot_count': 'none', 'snapdev': 'hidden', 'acltype': 'nfsv4', 'context': 'none', 'fscontext': 'none', 'defcontext': 'none', 'rootcontext': 'none', 'relatime': 'off', 'redundant_metadata': 'all', 'overlay': 'on', 'encryption': 'off', 'keylocation': 'none', 'keyformat': 'none', 'pbkdf2iters': '0', 'special_small_blocks': '0', 'name': 'sa_pool/data'}
+# END ZFSConfiguration/1
+# BEGIN ZFSConfiguration/2
+{'exists': True, 'path': '/sa_data', 'mode': '0755', 'isdir': True, 'ischr': False, 'isblk': False, 'isreg': False, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 13, 'inode': 34, 'dev': -7400498451385243398, 'nlink': 3, 'atime': 1684062851.427664, 'mtime': 1684109665.707408, 'ctime': 1684109665.707408, 'wusr': True, 'rusr': True, 'xusr': True, 'wgrp': False, 'rgrp': True, 'xgrp': True, 'woth': False, 'roth': True, 'xoth': True, 'isuid': False, 'isgid': False, 'blocks': 33, 'block_size': 4096, 'device_type': -1, 'flags': 2048, 'generation': 0, 'birthtime': 1684062643.658644, 'readable': True, 'writeable': False, 'executable': True, 'pw_name': 'root', 'gr_name': 'wheel', 'mimetype': 'inode/directory', 'charset': 'binary', 'version': None, 'attributes': [], 'attr_flags': ''}
+# END ZFSConfiguration/2
+# BEGIN ZFSConfiguration/3
+{'exists': True, 'path': '/sa_data', 'mode': '0755', 'isdir': True, 'ischr': False, 'isblk': False, 'isreg': False, 'isfifo': False, 'islnk': False, 'issock': False, 'uid': 0, 'gid': 0, 'size': 13, 'inode': 34, 'dev': -7400498451385243398, 'nlink': 3, 'atime': 1684062851.427664, 'mtime': 1684109665.707408, 'ctime': 1684109665.707408, 'wusr': True, 'rusr': True, 'xusr': True, 'wgrp': False, 'rgrp': True, 'xgrp': True, 'woth': False, 'roth': True, 'xoth': True, 'isuid': False, 'isgid': False, 'blocks': 33, 'block_size': 4096, 'device_type': -1, 'flags': 2048, 'generation': 0, 'birthtime': 1684062643.658644, 'readable': True, 'writeable': False, 'executable': True, 'pw_name': 'root', 'gr_name': 'wheel', 'mimetype': 'inode/directory', 'charset': 'binary', 'version': None, 'attributes': [], 'attr_flags': ''}
+# END ZFSConfiguration/3
+# BEGIN Logrotate/0
+ 
+# END Logrotate/0
+# BEGIN Logrotate/1
+{'filecount': '10', 'filessize': [1076, 1078, 1026, 1076, 1080, 1128, 1132, 1130, 1076, 1076]}
+# END Logrotate/1
+# BEGIN ZFSManagingtools/0
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Set worker] **************************************************************
+ok: [localhost]
+
+PLAY [workers] *****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.187.96.37]
+
+TASK [include main task] *******************************************************
+included: /tmp/fcfaea2c-5449-470b-81fc-01b7d5698154/ZFSManagingtools/0.yml for 10.187.96.37
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [remove snapshot] *********************************************************
+
+TASK [Generate name] ***********************************************************
+ok: [10.187.96.37]
+
+TASK [Run create] **************************************************************
+changed: [10.187.96.37] => (item=cleat)
+changed: [10.187.96.37] => (item=briar)
+changed: [10.187.96.37] => (item=slate)
+changed: [10.187.96.37] => (item=swung)
+changed: [10.187.96.37] => (item=snout)
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [set_fact] ****************************************************************
+ok: [10.187.96.37]
+
+TASK [Show snapshot list] ******************************************************
+ok: [10.187.96.37] => {
+    "msg": [
+        "sa_pool/data@cleat",
+        "sa_pool/data@briar",
+        "sa_pool/data@slate",
+        "sa_pool/data@swung",
+        "sa_pool/data@snout"
+    ]
+}
+
+TASK [Check snapshot] **********************************************************
+skipping: [10.187.96.37] => (item=cleat) 
+skipping: [10.187.96.37] => (item=briar) 
+skipping: [10.187.96.37] => (item=slate) 
+skipping: [10.187.96.37] => (item=swung) 
+skipping: [10.187.96.37] => (item=snout) 
+
+PLAY RECAP *********************************************************************
+10.187.96.37               : ok=8    changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+# END ZFSManagingtools/0
+# BEGIN ZFSManagingtools/1
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Set worker] **************************************************************
+ok: [localhost]
+
+PLAY [workers] *****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.187.96.37]
+
+TASK [include main task] *******************************************************
+included: /tmp/fcfaea2c-5449-470b-81fc-01b7d5698154/ZFSManagingtools/1.yml for 10.187.96.37
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [set_fact] ****************************************************************
+ok: [10.187.96.37]
+
+TASK [Run list] ****************************************************************
+changed: [10.187.96.37]
+
+TASK [Result] ******************************************************************
+ok: [10.187.96.37] => {
+    "msg": [
+        "sa_pool/data@cleat",
+        "sa_pool/data@briar",
+        "sa_pool/data@slate",
+        "sa_pool/data@swung",
+        "sa_pool/data@snout"
+    ]
+}
+
+TASK [Answer] ******************************************************************
+ok: [10.187.96.37] => {
+    "msg": [
+        "sa_pool/data@cleat",
+        "sa_pool/data@briar",
+        "sa_pool/data@slate",
+        "sa_pool/data@swung",
+        "sa_pool/data@snout"
+    ]
+}
+
+TASK [Check snapshot] **********************************************************
+skipping: [10.187.96.37] => (item=sa_pool/data@cleat) 
+skipping: [10.187.96.37] => (item=sa_pool/data@briar) 
+skipping: [10.187.96.37] => (item=sa_pool/data@slate) 
+skipping: [10.187.96.37] => (item=sa_pool/data@swung) 
+skipping: [10.187.96.37] => (item=sa_pool/data@snout) 
+
+PLAY RECAP *********************************************************************
+10.187.96.37               : ok=7    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+# END ZFSManagingtools/1
+# BEGIN ZFSManagingtools/2
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Set worker] **************************************************************
+ok: [localhost]
+
+PLAY [workers] *****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.187.96.37]
+
+TASK [include main task] *******************************************************
+included: /tmp/fcfaea2c-5449-470b-81fc-01b7d5698154/ZFSManagingtools/2.yml for 10.187.96.37
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [set_fact] ****************************************************************
+ok: [10.187.96.37]
+
+TASK [Generate name] ***********************************************************
+ok: [10.187.96.37]
+
+TASK [Generate file] ***********************************************************
+changed: [10.187.96.37] => (item=cross)
+changed: [10.187.96.37] => (item=paper)
+changed: [10.187.96.37] => (item=eaten)
+changed: [10.187.96.37] => (item=aloft)
+changed: [10.187.96.37] => (item=empty)
+
+TASK [Run roll] ****************************************************************
+changed: [10.187.96.37]
+
+TASK [debug] *******************************************************************
+ok: [10.187.96.37] => {
+    "sabktool": {
+        "changed": true,
+        "cmd": [
+            "sabktool",
+            "roll",
+            "cleat"
+        ],
+        "delta": "0:00:01.036317",
+        "end": "2023-05-15 08:49:55.643906",
+        "failed": false,
+        "rc": 0,
+        "start": "2023-05-15 08:49:54.607589",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+
+TASK [Check file exist] ********************************************************
+ok: [10.187.96.37]
+
+TASK [debug] *******************************************************************
+ok: [10.187.96.37] => {
+    "(result.files | map(attribute= 'path'))": [
+        "/sa_data/pluck",
+        "/sa_data/gauze",
+        "/sa_data/petri",
+        "/sa_data/await",
+        "/sa_data/afoot",
+        "/sa_data/plank",
+        "/sa_data/viper",
+        "/sa_data/brick",
+        "/sa_data/smite",
+        "/sa_data/clerk"
+    ]
+}
+
+TASK [fail] ********************************************************************
+skipping: [10.187.96.37] => (item=cross) 
+skipping: [10.187.96.37] => (item=paper) 
+skipping: [10.187.96.37] => (item=eaten) 
+skipping: [10.187.96.37] => (item=aloft) 
+skipping: [10.187.96.37] => (item=empty) 
+
+PLAY RECAP *********************************************************************
+10.187.96.37               : ok=10   changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+# END ZFSManagingtools/2
+# BEGIN ZFSManagingtools/3
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [localhost]
+
+TASK [Set worker] **************************************************************
+ok: [localhost]
+
+PLAY [workers] *****************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.187.96.37]
+
+TASK [include main task] *******************************************************
+included: /tmp/fcfaea2c-5449-470b-81fc-01b7d5698154/ZFSManagingtools/3.yml for 10.187.96.37
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [set_fact] ****************************************************************
+ok: [10.187.96.37]
+
+TASK [Run remove] **************************************************************
+changed: [10.187.96.37]
+
+TASK [debug] *******************************************************************
+ok: [10.187.96.37] => {
+    "sabktool": {
+        "changed": true,
+        "cmd": [
+            "sabktool",
+            "remove",
+            "cleat"
+        ],
+        "delta": "0:00:00.015573",
+        "end": "2023-05-15 08:50:10.219880",
+        "failed": false,
+        "rc": 0,
+        "start": "2023-05-15 08:50:10.204307",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "",
+        "stdout_lines": []
+    }
+}
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [fail] ********************************************************************
+skipping: [10.187.96.37]
+
+TASK [Run remove] **************************************************************
+changed: [10.187.96.37]
+
+TASK [Get snapshot list] *******************************************************
+ok: [10.187.96.37]
+
+TASK [fail] ********************************************************************
+skipping: [10.187.96.37]
+
+PLAY RECAP *********************************************************************
+10.187.96.37               : ok=9    changed=2    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+# END ZFSManagingtools/3
+# BEGIN ZFSManagingtools/4
+ 
+# END ZFSManagingtools/4

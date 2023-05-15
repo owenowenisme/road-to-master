@@ -1,0 +1,83 @@
+{
+    "score": 100,
+    "results": {
+        "General": [
+            {
+                "message": "Check has three 1G disk",
+                "ans": true,
+                "weight": "10"
+            },
+            {
+                "message": "Make sure ZFS will automatically mount after reboot",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "Check logrotate has installed",
+                "ans": true,
+                "weight": "5"
+            }
+        ],
+        "ZFSConfiguration": [
+            {
+                "message": "Check sa_pool zpool has been created successfully",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "Check sa_pool/data zfs has been created successfully.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check /sa_data permission.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check /sa_data directory owner and group.",
+                "ans": true,
+                "weight": "5"
+            }
+        ],
+        "Logrotate": [
+            {
+                "message": "fakeloggen.py runs successfully.",
+                "ans": true,
+                "weight": "10"
+            },
+            {
+                "message": "The number of logs under /var/log/fakelog/ is 10, and the file size is between 1k and 1.5k.",
+                "ans": true,
+                "weight": "25"
+            }
+        ],
+        "ZFSManagingtools": [
+            {
+                "message": "check sabktool can run create by other user.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check sabktool list can run successfully.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check sabktool roll can run successfully.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check sabktool remove can run successfully.",
+                "ans": true,
+                "weight": "5"
+            },
+            {
+                "message": "check sabktool logrotate can run successfully.",
+                "ans": true,
+                "weight": "5"
+            }
+        ]
+    }
+}

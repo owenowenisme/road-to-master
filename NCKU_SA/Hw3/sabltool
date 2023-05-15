@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import sys
+import os
+if len(sys.argv) < 2:
+    print('no argument')
+    sys.exit()
+if(sys.argv[1]=="help"):
+    print('Usage:\n\
+    create <snapshot-name>\n\
+    remove <snapshot-name> | all\n\
+    list\n\
+    roll <snapshot-name>\n\
+    logrotate')
+
+if(sys.argv[1]=="create"):
+    os.system("zfs snapshot sa_pool/data@"+sys.argv[2])
+    sys.exit()
+if(sys.argv[1]=="remove"):
+    if(sys.argv[2]=="all"):
+        os.system("zfs destroy sa_pool/data@% > /dev/null")
+    else:
+        os.system("zfs destroy sa_pool/data@"+sys.argv[2])
+    sys.exit()
+if(sys.argv[1]=="list"):
+    os.system("zfs list -r -t snapshot -o name /sa_data | awk 'NR!=1'")
+    sys.exit()
+if(sys.argv[1]=="roll"):
+    os.system("zfs rollback -r sa_pool/data@"+sys.argv[2])
+    sys.exit()
+if(sys.argv[1]=="logrotate"):
+    os.system("logrotate /etc/logrotate.d/fakelog")
+    sys.exit()

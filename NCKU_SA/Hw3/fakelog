@@ -1,0 +1,8 @@
+/var/log/fakelog.log{
+        rotate 9
+        size 1k
+        postrotate
+                cp /var/log/fakelog.log.* /sa_data/log
+                cp /var/log/fakelog.log.* /var/log/fakelog
+        endscript
+}

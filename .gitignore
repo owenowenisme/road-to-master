@@ -10,4 +10,5 @@ test.cpp
 test.c
 .vscode
 !/NCKU_SA/**
+!/PD2/**
 **/.DS_Store

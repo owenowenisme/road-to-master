@@ -9,52 +9,6 @@
 const int maxn = 1e8;
 const double EPS = 1e-15;
 using namespace std;
-#pragma GCC optimize(3)
-#pragma GCC optimize("Ofast")
-#pragma GCC optimize("inline")
-#pragma GCC optimize("-fgcse")
-#pragma GCC optimize("-fgcse-lm")
-#pragma GCC optimize("-fipa-sra")
-#pragma GCC optimize("-ftree-pre")
-#pragma GCC optimize("-ftree-vrp")
-#pragma GCC optimize("-fpeephole2")
-#pragma GCC optimize("-ffast-math")
-#pragma GCC optimize("-fsched-spec")
-#pragma GCC optimize("unroll-loops")
-#pragma GCC optimize("-falign-jumps")
-#pragma GCC optimize("-falign-loops")
-#pragma GCC optimize("-falign-labels")
-#pragma GCC optimize("-fdevirtualize")
-#pragma GCC optimize("-fcaller-saves")
-#pragma GCC optimize("-fcrossjumping")
-#pragma GCC optimize("-fthread-jumps")
-#pragma GCC optimize("-funroll-loops")
-#pragma GCC optimize("-fwhole-program")
-#pragma GCC optimize("-freorder-blocks")
-#pragma GCC optimize("-fschedule-insns")
-#pragma GCC optimize("inline-functions")
-#pragma GCC optimize("-ftree-tail-merge")
-#pragma GCC optimize("-fschedule-insns2")
-#pragma GCC optimize("-fstrict-aliasing")
-#pragma GCC optimize("-fstrict-overflow")
-#pragma GCC optimize("-falign-functions")
-#pragma GCC optimize("-fcse-skip-blocks")
-#pragma GCC optimize("-fcse-follow-jumps")
-#pragma GCC optimize("-fsched-interblock")
-#pragma GCC optimize("-fpartial-inlining")
-#pragma GCC optimize("no-stack-protector")
-#pragma GCC optimize("-freorder-functions")
-#pragma GCC optimize("-findirect-inlining")
-#pragma GCC optimize("-fhoist-adjacent-loads")
-#pragma GCC optimize("-frerun-cse-after-loop")
-#pragma GCC optimize("inline-small-functions")
-#pragma GCC optimize("-finline-small-functions")
-#pragma GCC optimize("-ftree-switch-conversion")
-#pragma GCC optimize("-foptimize-sibling-calls")
-#pragma GCC optimize("-fexpensive-optimizations")
-#pragma GCC optimize("-funsafe-loop-optimizations")
-#pragma GCC optimize("inline-functions-called-once")
-#pragma GCC optimize("-fdelete-null-pointer-checks")
 bool cmp(pair<double, int>& a, pair<double, int>& b) {
     if (a.first == b.first) {
         return a.second < b.second;
@@ -65,14 +19,21 @@ bool cmp(pair<double, int>& a, pair<double, int>& b) {
 void solve(char* filename1, char* filename2, int k) {
     unordered_map<string, set<int>> mp;
     unordered_map<int, double> idfsum;
+    
+    unordered_map<int,unordered_map<string,double>> tfmp;
+    unordered_map<string,double>tmp_mp;
     set<int> tmpset;
+    
     ifstream in(filename1);
     stringstream ss;
-    string s, tmp;
+    string s="", tmp="";
 
     int id = 0;
     int strnum = 0;
+
     while (getline(in, s)) {
+        int wordnum=0;
+        tmp_mp.clear();
         strnum++;
         int i = 0;
         tmp = "";
@@ -91,18 +52,25 @@ void solve(char* filename1, char* filename2, int k) {
             else if (s[i] != ' ') {
                 continue;
             } else if (tmp != "") {
+                wordnum++;
                 mp[tmp].insert(id);
+                tmp_mp[tmp]++;//cout<<tmp<<' '<<wordnum<<'\n';
                 tmp = "";
             }
         }
-
         mp[tmp].insert(id);
+        tmp_mp[tmp]++;
+        if(tmp.length()>0)
+            wordnum++;
+        for(auto &a:tmp_mp)
+             a.second=(double)a.second/(double)wordnum;
+        tfmp[id]=tmp_mp;
+        // cout<<id<<' '<<wordnum<<'\n';
     }
-
+    map<string,double> realidf;
     ifstream in2(filename2);
     set<int> ans;
     string str = "";
-    int checker = 1;
     while (getline(in2, str)) {
         idfsum.clear();
         ss << str;
@@ -110,10 +78,13 @@ void solve(char* filename1, char* filename2, int k) {
             transform(s.begin(), s.end(), s.begin(), ::tolower);
             if (mp[s].size() > 0) {
                 double idf = log((double)strnum / (double)mp[s].size());
+                realidf[s]=idf;
                 for (auto a : mp[s]) {
                     if (strnum > mp[s].size()) {
-                        idfsum[a] += idf;
+                        // idfsum[a] += idf;
+                        idfsum[a]+=tfmp[a][s]*idf;
                     }
+                    
                 }
             }
         }
@@ -136,6 +107,14 @@ void solve(char* filename1, char* filename2, int k) {
         idfsum.clear();
         ss.clear();
     }
+    // cout<<"fkndo"<<strnum;
+    // for(auto a:tfmp){
+    //     cout<<a.first<<'\n';
+    //     for(auto b:a.second){
+    //         cout<<b.first<<' '<<b.second<<' '<<realidf[b.first]<<'\n';
+    //     }
+    //     cout<<"====================\n";
+    // }
 }
 signed main(int argc, char* argv[]) {
     ac;

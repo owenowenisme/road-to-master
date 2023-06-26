@@ -1,7 +1,57 @@
-#include <bits/stdc++.h>
+#pragma GCC optimize(3)
+#pragma GCC target("avx")
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("inline")
+#pragma GCC optimize("-fgcse")
+#pragma GCC optimize("-fgcse-lm")
+#pragma GCC optimize("-fipa-sra")
+#pragma GCC optimize("-ftree-pre")
+#pragma GCC optimize("-ftree-vrp")
+#pragma GCC optimize("-fpeephole2")
+#pragma GCC optimize("-ffast-math")
+#pragma GCC optimize("-fsched-spec")
+#pragma GCC optimize("unroll-loops")
+#pragma GCC optimize("-falign-jumps")
+#pragma GCC optimize("-falign-loops")
+#pragma GCC optimize("-falign-labels")
+#pragma GCC optimize("-fdevirtualize")
+#pragma GCC optimize("-fcaller-saves")
+#pragma GCC optimize("-fcrossjumping")
+#pragma GCC optimize("-fthread-jumps")
+#pragma GCC optimize("-funroll-loops")
+#pragma GCC optimize("-freorder-blocks")
+#pragma GCC optimize("-fschedule-insns")
+#pragma GCC optimize("inline-functions")
+#pragma GCC optimize("-ftree-tail-merge")
+#pragma GCC optimize("-fschedule-insns2")
+#pragma GCC optimize("-fstrict-aliasing")
+#pragma GCC optimize("-falign-functions")
+#pragma GCC optimize("-fcse-follow-jumps")
+#pragma GCC optimize("-fsched-interblock")
+#pragma GCC optimize("-fpartial-inlining")
+#pragma GCC optimize("no-stack-protector")
+#pragma GCC optimize("-freorder-functions")
+#pragma GCC optimize("-findirect-inlining")
+#pragma GCC optimize("-fhoist-adjacent-loads")
+#pragma GCC optimize("-frerun-cse-after-loop")
+#pragma GCC optimize("inline-small-functions")
+#pragma GCC optimize("-finline-small-functions")
+#pragma GCC optimize("-ftree-switch-conversion")
+#pragma GCC optimize("-foptimize-sibling-calls")
+#pragma GCC optimize("-fexpensive-optimizations")
+#pragma GCC optimize("inline-functions-called-once")
+#pragma GCC optimize("-fdelete-null-pointer-checks")
 #define ac ios_base::sync_with_stdio(false), cin.tie(0)
-#define mem(a, val) memset(a, val, sizeof(a))
+#include<cmath>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <set>
+#include<algorithm>
+#include<fstream>
+#include<sstream>
 #define rep(i, a, b) for (int i = a; i < b; ++i)
+#define mem(a, val) memset(a, val, sizeof(a))
 #define pb push_back
 #define int long long
 #define F first
@@ -19,11 +69,11 @@ bool cmp(pair<double, int>& a, pair<double, int>& b) {
 void solve(char* filename1, char* filename2, int k) {
     unordered_map<string, set<int>> mp;
     unordered_map<int, double> idfsum;
-    
+
     unordered_map<int,unordered_map<string,double>> tfmp;
     unordered_map<string,double>tmp_mp;
     set<int> tmpset;
-    
+
     ifstream in(filename1);
     stringstream ss;
     string s="", tmp="";
@@ -63,11 +113,10 @@ void solve(char* filename1, char* filename2, int k) {
         if(tmp.length()>0)
             wordnum++;
         for(auto &a:tmp_mp)
-             a.second=(double)a.second/(double)wordnum;
+            a.second=(double)a.second/(double)wordnum;
         tfmp[id]=tmp_mp;
         // cout<<id<<' '<<wordnum<<'\n';
     }
-    map<string,double> realidf;
     ifstream in2(filename2);
     set<int> ans;
     string str = "";
@@ -78,13 +127,12 @@ void solve(char* filename1, char* filename2, int k) {
             transform(s.begin(), s.end(), s.begin(), ::tolower);
             if (mp[s].size() > 0) {
                 double idf = log((double)strnum / (double)mp[s].size());
-                realidf[s]=idf;
                 for (auto a : mp[s]) {
                     if (strnum > mp[s].size()) {
                         // idfsum[a] += idf;
                         idfsum[a]+=tfmp[a][s]*idf;
                     }
-                    
+
                 }
             }
         }
@@ -107,14 +155,6 @@ void solve(char* filename1, char* filename2, int k) {
         idfsum.clear();
         ss.clear();
     }
-    // cout<<"fkndo"<<strnum;
-    // for(auto a:tfmp){
-    //     cout<<a.first<<'\n';
-    //     for(auto b:a.second){
-    //         cout<<b.first<<' '<<b.second<<' '<<realidf[b.first]<<'\n';
-    //     }
-    //     cout<<"====================\n";
-    // }
 }
 signed main(int argc, char* argv[]) {
     ac;

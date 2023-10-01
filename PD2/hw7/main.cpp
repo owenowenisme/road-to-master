@@ -67,7 +67,7 @@ bool cmp(pair<double, int>& a, pair<double, int>& b) {
 }
 
 void solve(char* filename1, char* filename2, int k) {
-    unordered_map<string, set<int>> mp;
+    unordered_map<string, set<int>> mp; 
     unordered_map<int, double> idfsum;
 
     unordered_map<int,unordered_map<string,double>> tfmp;

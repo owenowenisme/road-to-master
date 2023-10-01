@@ -1,0 +1,28 @@
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+C:\Users\owenowenisme\source\repos\ConsoleApp1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\refint\ConsoleApp1.dll
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache
+\\Mac\Home\Desktop\road-to-master\Window Design\f74111234_practice_2_1\ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll

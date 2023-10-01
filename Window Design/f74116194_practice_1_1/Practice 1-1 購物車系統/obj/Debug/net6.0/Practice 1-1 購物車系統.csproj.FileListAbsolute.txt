@@ -1,0 +1,14 @@
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\bin\Debug\net6.0\Practice 1-1 購物車系統.exe
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\bin\Debug\net6.0\Practice 1-1 購物車系統.deps.json
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\bin\Debug\net6.0\Practice 1-1 購物車系統.runtimeconfig.json
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\bin\Debug\net6.0\Practice 1-1 購物車系統.dll
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\bin\Debug\net6.0\Practice 1-1 購物車系統.pdb
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.AssemblyInfoInputs.cache
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.AssemblyInfo.cs
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.csproj.CoreCompileInputs.cache
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.dll
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\refint\Practice 1-1 購物車系統.dll
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.pdb
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\Practice 1-1 購物車系統.genruntimeconfig.cache
+C:\Users\owenowenisme\source\repos\Practice 1-1 購物車系統\Practice 1-1 購物車系統\obj\Debug\net6.0\ref\Practice 1-1 購物車系統.dll

@@ -22,6 +22,13 @@ class Program
     {
         Console.InputEncoding = Encoding.Unicode;
         Console.OutputEncoding = Encoding.Unicode;
+        Console.WriteLine("-------------------------###    社員資料登記    ###------------------------");
+        Console.WriteLine("新增社員資訊:\tregister\tname\tdepartment\tID");
+        Console.WriteLine("以特定屬性查詢:\tsearch\t\tname\tag\tWant_search_string");
+        Console.WriteLine("授予社員職位:\tentitle\t\tname\tdepartment\tID\tThat_title");
+        Console.WriteLine("所有社員列表:\tcheck");
+        Console.WriteLine("指令格式列表:\thelp");
+        Console.WriteLine("離開此程式:\texit");
         Program program = new Program(); 
         
         string input="";
@@ -35,14 +42,14 @@ class Program
             {
                 if (parsed[0] == "help")
                 {
-                    Console.WriteLine("----------------------------------------------------------");
+                    Console.WriteLine("---------------------------------------------------------------------------");
                     Console.WriteLine("新增社員資訊:\tregister\tname\tdepartment\tID");
                     Console.WriteLine("以特定屬性查詢:\tsearch\t\tname\tag\tWant_search_string");
                     Console.WriteLine("授予社員職位:\tentitle\t\tname\tdepartment\tID\tThat_title");
                     Console.WriteLine("所有社員列表:\tcheck");
                     Console.WriteLine("指令格式列表:\thelp");
                     Console.WriteLine("離開此程式:\texit");
-                    Console.WriteLine("---------------------------------------------------------");
+                    Console.WriteLine("---------------------------------------------------------------------------");
                 }
                 else if (parsed[0] == "register")
                 {

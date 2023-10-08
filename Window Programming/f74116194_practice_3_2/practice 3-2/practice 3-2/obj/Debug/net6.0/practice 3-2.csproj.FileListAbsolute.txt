@@ -12,17 +12,17 @@ C:\Users\owenowenisme\source\repos\practice 3-2\practice 3-2\obj\Debug\net6.0\re
 C:\Users\owenowenisme\source\repos\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.pdb
 C:\Users\owenowenisme\source\repos\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.genruntimeconfig.cache
 C:\Users\owenowenisme\source\repos\practice 3-2\practice 3-2\obj\Debug\net6.0\ref\practice 3-2.dll
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.exe
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.deps.json
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.runtimeconfig.json
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.dll
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.pdb
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.GeneratedMSBuildEditorConfig.editorconfig
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.AssemblyInfoInputs.cache
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.AssemblyInfo.cs
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.csproj.CoreCompileInputs.cache
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.dll
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\refint\practice 3-2.dll
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.pdb
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.genruntimeconfig.cache
-\\Mac\Home\Downloads\f74116194_practice_3_2\practice 3-2\practice 3-2\obj\Debug\net6.0\ref\practice 3-2.dll
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.exe
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.deps.json
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.runtimeconfig.json
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.dll
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\bin\Debug\net6.0\practice 3-2.pdb
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.AssemblyInfoInputs.cache
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.AssemblyInfo.cs
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.dll
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\refint\practice 3-2.dll
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.pdb
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\practice 3-2.genruntimeconfig.cache
+\\Mac\Home\Downloads\f74116194_practice_3_2 (1)\practice 3-2\practice 3-2\obj\Debug\net6.0\ref\practice 3-2.dll

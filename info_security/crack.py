@@ -28,9 +28,9 @@ def all_substitutions(s):
     generate_substitutions(s, 0, "", result)
     return result
 
-input_string = "|q▆~k=▆&?I$Fx▆N▆"
+input_string = "|q▆~k=▆&?I$Fx▆N▆" # Paste key to here!
 substitutions = all_substitutions(input_string)
-base64_encoded_ciphertext ="FZp57a6p84EUNC7I/ENj4RhPZtryOJr4che9JbA8ng1eI8ZMTlsl8kzicBDqkOqkFj3lwC69KR2MeA8lscVlig=="
+base64_encoded_ciphertext ="FZp57a6p84EUNC7I/ENj4RhPZtryOJr4che9JbA8ng1eI8ZMTlsl8kzicBDqkOqkFj3lwC69KR2MeA8lscVlig==" # Paste cipher text to here!
 i = 0
 file_path = "log.txt"
 for key in substitutions:

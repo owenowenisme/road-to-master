@@ -1,0 +1,10 @@
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\bin\Debug\practice4-2.exe.config
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\bin\Debug\practice4-2.exe
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\bin\Debug\practice4-2.pdb
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4-2.csproj.AssemblyReference.cache
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4_2.Form1.resources
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4_2.Properties.Resources.resources
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4-2.csproj.GenerateResource.cache
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4-2.csproj.CoreCompileInputs.cache
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4-2.exe
+C:\Users\owenowenisme\source\repos\practice4-2\practice4-2\obj\Debug\practice4-2.pdb
